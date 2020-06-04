@@ -34,7 +34,7 @@ public class DecagonApplication {
             System.out.println("==================</end>Highest Comment===========");
             System.out.println();
             // 2. Most active authors
-            List<String> mostActive = service.getMostActiveAuthors(10);
+            List<String> mostActive = service.getMostActiveAuthors(2);
             System.out.println("==================Most Active Users===========");
             for (String user : mostActive) {
                 System.out.println(user);
@@ -42,7 +42,7 @@ public class DecagonApplication {
             System.out.println("==================</end>Most Active Users===========");
             System.out.println();
             // 2. Users sorted by date
-            List<String> users = service.getUsernamesSortedByRecordDate(1000);
+            List<String> users = service.getUsernamesSortedByRecordDate(2);
             System.out.println("==================Sorted By Date===========");
             for (String user : users) {
                 System.out.println(user);

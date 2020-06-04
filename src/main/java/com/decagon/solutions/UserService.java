@@ -46,7 +46,7 @@ public class UserService {
         Collections.sort(users, new SubmissionCountComparator());
         List<String> usernames = new ArrayList<>();
         for (int i = 0; i < users.size(); i++) {
-            if (i <= threshold) {
+            if (i < threshold) {
                 usernames.add(users.get(i).toString());
             } else {
                 break;
@@ -72,7 +72,7 @@ public class UserService {
         Collections.sort(users, new CreatedByComparator());
         List<String> usernames = new ArrayList<>();
         for (int i = 0; i < users.size(); i++) {
-            if (i <= threshold) {
+            if (i < threshold) {
                 usernames.add(users.get(i).toString());
             } else {
                 break;
